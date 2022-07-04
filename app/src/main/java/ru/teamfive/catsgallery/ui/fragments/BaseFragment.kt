@@ -7,7 +7,7 @@ import androidx.viewbinding.ViewBinding
 // вместо T надо передавать ViewBinding фрагмента или активити
 open class BaseFragment<T : ViewBinding> : Fragment() {
 
-    private var _binding: T? = null
+    protected var _binding: T? = null
     protected val binding get() = _binding!!
 
     override fun onDestroyView() {
