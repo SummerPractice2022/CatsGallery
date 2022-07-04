@@ -13,15 +13,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // пример работы с API
+        // всё что ниже можно убрать или закомментить если что
         val api = CatsApi() // тут создаём API
         val breedsRepository = api.getBreedsRepository() // репозиторий с породами
         val categoriesRepository = api.getCategoriesRepository() // репозиторий с категориями
         val favoritesRepository = api.getFavoritesRepository() // репозиторий с избранным
         val imagesRepository = api.getImagesRepository() // репозиторий с картинками
+        val votesRepository = api.getVotesRepository() // репозиторий с лайками
 
         lifecycleScope.launch {
-            val favs = favoritesRepository.getAllFavorites()
-            Log.d("Faves", favs.toString())
+            val faves = favoritesRepository.getAllFavorites()
+            Log.d("Faves", faves.toString())
         }
     }
 }

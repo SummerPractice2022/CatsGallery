@@ -3,8 +3,8 @@ package ru.teamfive.catsgallery.data.api.repositories
 import okhttp3.RequestBody
 import retrofit2.http.*
 import ru.teamfive.catsgallery.data.api.models.Favorite
+import ru.teamfive.catsgallery.data.api.responses.MessageIdResponse
 import ru.teamfive.catsgallery.data.api.responses.MessageResponse
-import ru.teamfive.catsgallery.data.api.responses.SaveFavoriteResponse
 
 /**
  * Избранное
@@ -38,6 +38,6 @@ interface FavoritesRepository {
      * @return Возвращает SUCCESS и id в избранном в случае успеха
      */
     @POST("/v1/favourites")
-    suspend fun saveFavorite(@Body body: RequestBody): SaveFavoriteResponse
+    suspend fun saveFavorite(@Body body: RequestBody): MessageIdResponse
 
 }

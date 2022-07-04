@@ -3,10 +3,7 @@ package ru.teamfive.catsgallery.data.api
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import ru.teamfive.catsgallery.data.api.repositories.BreedsRepository
-import ru.teamfive.catsgallery.data.api.repositories.CategoriesRepository
-import ru.teamfive.catsgallery.data.api.repositories.FavoritesRepository
-import ru.teamfive.catsgallery.data.api.repositories.ImagesRepository
+import ru.teamfive.catsgallery.data.api.repositories.*
 
 const val API_KEY = "7e07d997-e3c0-4de3-8520-08c1ec669d7f"
 
@@ -20,6 +17,8 @@ class CatsApi {
         retrofit.create(FavoritesRepository::class.java)
     fun getImagesRepository(): ImagesRepository =
         retrofit.create(ImagesRepository::class.java)
+    fun getVotesRepository(): VotesRepository =
+        retrofit.create(VotesRepository::class.java)
 
     private val retrofit = Retrofit.Builder()
         .client(
