@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/firsFragment">
+
+    <fragment
+        android:id="@+id/firsFragment"
+        android:name="com.teamfive.catsgallery.FirsFragment"
+        android:label="fragment_firs"
+        tools:layout="@layout/fragment_firs" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.teamfive.catsgallery.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/thirFragment"
+        android:name="com.teamfive.catsgallery.ThirFragment"
+        android:label="fragment_thir"
+        tools:layout="@layout/fragment_thir" />
+</navigation>
