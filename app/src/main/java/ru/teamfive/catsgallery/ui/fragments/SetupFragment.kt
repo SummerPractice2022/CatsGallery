@@ -1,24 +1,23 @@
 package ru.teamfive.catsgallery.ui.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.teamfive.catsgallery.R
 import com.teamfive.catsgallery.databinding.FragmentSetupBinding
 
-class SetupFragment: BaseFragment<FragmentSetupBinding>() {
+class SetupFragment: Fragment(R.layout.fragment_setup) {
+    private var _binding: FragmentSetupBinding? = null
+    private val binding get() = _binding!!
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentSetupBinding.inflate(inflater, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        _binding = FragmentSetupBinding.bind(view)
 
-        // TODO: тут выбор породы
-        // для получения вьюшек обращаться к binding
-        // у вьюшки в xml обязательно должен быть id
+    }
 
-        return binding.root
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
     }
 }
