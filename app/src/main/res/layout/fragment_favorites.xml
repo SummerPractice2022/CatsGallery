@@ -7,11 +7,12 @@
     tools:context="ru.teamfive.catsgallery.ui.fragments.FavoritesFragment">
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tv_favorites"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="sans-serif-medium"
-        android:text="ИЗБРАННОЕ"
+        android:text="@string/favorites"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,14 +20,15 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewImageFav"
-        tools:itemCount="67"
-        tools:listitem="@layout/item_favorites"
-        android:layout_width="292dp"
-        android:layout_height="534dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_favorites"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/item_favorites" />
 </androidx.constraintlayout.widget.ConstraintLayout>

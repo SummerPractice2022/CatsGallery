@@ -22,8 +22,6 @@ class BreedAdapter(
     )
     override fun onBindViewHolder(holder: BreedHolder, position: Int) {
         holder.onBind(list[position])
-
-
     }
 
     override fun getItemCount(): Int = list.size

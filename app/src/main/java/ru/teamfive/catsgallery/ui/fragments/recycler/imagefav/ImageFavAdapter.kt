@@ -19,12 +19,9 @@ class ImageFavAdapter(
         )
     )
 
-
-
     override fun onBindViewHolder(holder: ImageFavHolders, position: Int) {
         holder.onBind(list[position])
     }
 
     override fun getItemCount(): Int = list.size
-
 }

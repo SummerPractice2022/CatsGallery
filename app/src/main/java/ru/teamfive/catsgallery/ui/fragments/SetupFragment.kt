@@ -13,7 +13,6 @@ class SetupFragment: Fragment(R.layout.fragment_setup) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentSetupBinding.bind(view)
-
     }
 
     override fun onDestroyView() {

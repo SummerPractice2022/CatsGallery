@@ -8,9 +8,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="324dp"
-        android:layout_height="318dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:maxHeight="320dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,55 +21,58 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="324dp"
+        android:id="@+id/add_to_favorites"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="44dp"
-        android:text="ДОБАВИТЬ В ИЗБРАННОЕ"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/add_to_favorites"
+        app:layout_constraintBottom_toTopOf="@+id/another_picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="324dp"
+        android:id="@+id/another_picture"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="116dp"
-        android:text="ДРУГОЙ КОТИК"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/another_picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/add_to_favorites" />
 
     <Button
-        android:id="@+id/button10"
-        android:layout_width="324dp"
+        android:id="@+id/install_on_wallpaper"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="192dp"
-        android:text="УСТАНОВИТЬ НА ОБОИ"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/installed_on_wallpaper"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintTop_toBottomOf="@+id/another_picture" />
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="137dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="92dp"
-        android:text="ПОДРОБНЕЕ"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/about_the_breed"
         android:textColorLink="@color/teal_200"
         app:iconTint="@color/teal_200"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/install_on_wallpaper"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 

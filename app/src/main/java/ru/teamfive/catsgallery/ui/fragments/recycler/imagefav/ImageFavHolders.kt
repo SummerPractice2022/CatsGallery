@@ -9,5 +9,4 @@ class ImageFavHolders(
     fun onBind(imagefav: ImageFav){
         binding.textFavorites.text = imagefav.numberFav
     }
-
 }

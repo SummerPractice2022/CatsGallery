@@ -9,6 +9,5 @@ class BreedHolder(
 ):RecyclerView.ViewHolder(binding.root) {
     fun onBind(breed: Breed){
         binding.textBreed.text = breed.name
-
     }
 }
