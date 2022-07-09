@@ -4,10 +4,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.teamfive.catsgallery.databinding.ItemMainBinding
+import ru.teamfive.catsgallery.data.api.models.Breed
 
 
 class BreedAdapter(
-    private val list: List<Breedrec>
+    private val list: List<Breed>
 ): RecyclerView.Adapter<BreedHolder>() {
 
     override fun onCreateViewHolder(

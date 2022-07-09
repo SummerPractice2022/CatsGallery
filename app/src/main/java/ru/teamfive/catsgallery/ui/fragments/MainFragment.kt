@@ -3,9 +3,12 @@ package ru.teamfive.catsgallery.ui.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.teamfive.catsgallery.R
-import com.teamfive.catsgallery.databinding.FragmentFavoritesBinding
 import com.teamfive.catsgallery.databinding.FragmentMainBinding
+import kotlinx.coroutines.launch
+import ru.teamfive.catsgallery.data.api.CatsApi
+import ru.teamfive.catsgallery.data.api.repositories.BreedsRepository
 import ru.teamfive.catsgallery.ui.fragments.recycler.breed.BreedAdapter
 import ru.teamfive.catsgallery.ui.fragments.recycler.breed.BreedRepository
 
@@ -19,9 +22,16 @@ class MainFragment: Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentMainBinding.bind(view)
 
-        adapter = BreedAdapter(BreedRepository.breed_name)
+        val api = CatsApi()
 
-        binding.recyclerViewMain.adapter=adapter
+        val breedsRepository = api.getBreedsRepository()
+        lifecycleScope.launch {
+            adapter = BreedAdapter(breedsRepository.getAllBreeds())
+
+            binding.recyclerViewMain.adapter=adapter
+        }
+
+
 
 
     }
