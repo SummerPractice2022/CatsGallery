@@ -27,7 +27,7 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment2_to_imageFragment"
+            android:id="@+id/action_mainFragment_to_imageFragment"
             app:destination="@id/imageFragment" />
     </fragment>
     <fragment

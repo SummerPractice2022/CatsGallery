@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/general_settings">
+
+        <EditTextPreference
+            android:icon="@drawable/ic_key"
+            android:key="api-key"
+            android:summary="@string/api_key_summary"
+            android:title="@string/api_key" />
+
+        <ListPreference
+            android:defaultValue="@string/system_default"
+            android:dialogTitle="@string/select_theme"
+            android:entries="@array/themes"
+            android:entryValues="@array/themes_values"
+            android:icon="@drawable/ic_theme"
+            android:key="theme"
+            android:negativeButtonText=""
+            android:summary="@string/theme_summary"
+            android:title="@string/theme" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

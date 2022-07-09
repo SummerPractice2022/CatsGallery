@@ -1,9 +1,11 @@
 package ru.teamfive.catsgallery.ui.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.teamfive.catsgallery.R
 import com.teamfive.catsgallery.databinding.FragmentMainBinding
 import kotlinx.coroutines.launch
@@ -20,13 +22,20 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentMainBinding.bind(view)
 
-        val api = CatsApi()
+        val api = CatsApi(requireContext())
 
         val breedsRepository = api.getBreedsRepository()
         lifecycleScope.launch {
-            adapter = BreedAdapter(breedsRepository.getAllBreeds())
+            try {
+                val breeds = breedsRepository.getAllBreeds()
 
-            binding.recyclerViewMain.adapter = adapter
+                adapter = BreedAdapter(breeds, findNavController())
+
+                binding.recyclerViewMain.adapter = adapter
+            } catch (e: Exception) {
+                Log.d("Error", e.stackTraceToString())
+            }
+
         }
     }
 

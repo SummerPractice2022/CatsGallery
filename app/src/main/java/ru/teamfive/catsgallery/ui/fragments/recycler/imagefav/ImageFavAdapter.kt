@@ -7,7 +7,7 @@ import com.teamfive.catsgallery.databinding.ItemFavoritesBinding
 
 class ImageFavAdapter(
     private val list: List<ImageFav>
-): RecyclerView.Adapter<ImageFavHolders>() {
+) : RecyclerView.Adapter<ImageFavHolders>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int,

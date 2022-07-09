@@ -4,9 +4,22 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_to_favorites">Add to favorites</string>
     <string name="another_picture">Another picture</string>
-    <string name="installed_on_wallpaper">Installed on wallpaper</string>
+    <string name="install_on_wallpaper">Install on wallpaper</string>
     <string name="about_the_breed">About the breed</string>
     <string name="number_favorites_cat">NUMBER FAVORITES CAT</string>
     <string name="favorites">Favorites</string>
-    <string name="select_breed">select breed</string>
+    <string name="select_breed">Select breed</string>
+    <string name="set_wp_success">Set wallpaper successfully</string>
+    <string name="add_favorites_success">Added to favorites successfully</string>
+    <string name="setup">Setup</string>
+    <string name="general_settings">General settings</string>
+    <string name="api_key">API Key</string>
+    <string name="api_key_summary">Change API Key</string>
+    <string name="theme">Theme</string>
+    <string name="theme_summary">Choose app theme</string>
+    <string name="system_default">System</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="select_theme">Select theme</string>
+    <string name="restart_app">Restart the app for the changes to take effect</string>
 </resources>
