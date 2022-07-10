@@ -4,9 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.teamfive.catsgallery.databinding.ItemFavoritesBinding
+import ru.teamfive.catsgallery.data.api.models.Favorite
 
 class ImageFavAdapter(
-    private val list: List<ImageFav>
+    private val list: List<Favorite>,
 ) : RecyclerView.Adapter<ImageFavHolders>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -20,7 +21,8 @@ class ImageFavAdapter(
     )
 
     override fun onBindViewHolder(holder: ImageFavHolders, position: Int) {
-        holder.onBind(list[position])
+
+
     }
 
     override fun getItemCount(): Int = list.size

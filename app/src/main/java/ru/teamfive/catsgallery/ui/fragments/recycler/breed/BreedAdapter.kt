@@ -39,7 +39,6 @@ class BreedAdapter(
 
     override fun getItemCount(): Int = list.size
 
-
 }
 
 
