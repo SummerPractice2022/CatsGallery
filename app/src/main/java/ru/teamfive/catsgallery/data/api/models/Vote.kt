@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName
  * @param imageId Id картинки
  * @param createdAt Когда добавили в избранное
  */
-data class Vote (
+data class Vote(
     var id: String,
     var value: Int,
     @SerializedName("image_id")

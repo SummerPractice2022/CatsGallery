@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName
  * @param imageId Id картринки
  * @param createdAt Когда добавили в избранное
  */
-data class Favorite (
+data class Favorite(
     var id: String,
     @SerializedName("image_id")
     var imageId: String,

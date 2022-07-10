@@ -1,24 +1,25 @@
 package ru.teamfive.catsgallery.ui.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.teamfive.catsgallery.R
 import com.teamfive.catsgallery.databinding.FragmentFavoritesBinding
+import ru.teamfive.catsgallery.ui.fragments.recycler.imagefav.ImageFavAdapter
+import ru.teamfive.catsgallery.ui.fragments.recycler.imagefav.ImageFavRepository
 
-class FavoritesFragment: BaseFragment<FragmentFavoritesBinding>() {
+class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
+    private var _binding: FragmentFavoritesBinding? = null
+    private val binding get() = _binding!!
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentFavoritesBinding.inflate(inflater, container, false)
+    private lateinit var adapter: ImageFavAdapter
 
-        // TODO: тут избранное
-        // для получения вьюшек обращаться к binding
-        // у вьюшки в xml обязательно должен быть id
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        _binding = FragmentFavoritesBinding.bind(view)
 
-        return binding.root
+        adapter = ImageFavAdapter(ImageFavRepository.numFav)
+
+        binding.recyclerViewImageFav.adapter = adapter
     }
 }

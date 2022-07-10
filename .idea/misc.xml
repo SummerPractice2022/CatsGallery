@@ -8,10 +8,17 @@
         <entry key="..\:/Users/Vilena/SP22/CatsGallery/app/src/main/res/layout/fragment_firs.xml" value="0.264945652173913" />
         <entry key="..\:/Users/Vilena/SP22/CatsGallery/app/src/main/res/layout/fragment_image.xml" value="0.176" />
         <entry key="..\:/Users/Vilena/SP22/CatsGallery/app/src/main/res/menu/bottom_menu.xml" value="0.2734375" />
+        <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/drawable/ic_key.xml" value="0.2235" />
+        <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2235" />
+        <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/drawable/ic_theme.xml" value="0.2235" />
         <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_favorites.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_image.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_image.xml" value="0.264" />
+        <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_main.xml" value="0.4" />
         <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_setup.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/item_favorites.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/item_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/xml/settings.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

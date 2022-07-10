@@ -3,21 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/firsFragment">
-
+    app:startDestination="@id/mainFragment">
     <fragment
-        android:id="@+id/firsFragment"
-        android:name="com.teamfive.catsgallery.FirsFragment"
-        android:label="fragment_firs"
-        tools:layout="@layout/fragment_firs" />
+        android:id="@+id/favoritesFragment"
+        android:name="ru.teamfive.catsgallery.ui.fragments.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
     <fragment
-        android:id="@+id/secondFragment"
-        android:name="com.teamfive.catsgallery.SecondFragment"
-        android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        android:id="@+id/imageFragment"
+        android:name="ru.teamfive.catsgallery.ui.fragments.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" >
+        <action
+            android:id="@+id/action_imageFragment_self2"
+            app:destination="@id/imageFragment" />
+        <action
+            android:id="@+id/action_imageFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/thirFragment"
-        android:name="com.teamfive.catsgallery.ThirFragment"
-        android:label="fragment_thir"
-        tools:layout="@layout/fragment_thir" />
+        android:id="@+id/mainFragment"
+        android:name="ru.teamfive.catsgallery.ui.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="ru.teamfive.catsgallery.ui.fragments.SetupFragment"
+        android:label="fragment_setup"
+        tools:layout="@layout/fragment_setup" />
 </navigation>
