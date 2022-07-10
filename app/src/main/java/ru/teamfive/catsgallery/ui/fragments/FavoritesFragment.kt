@@ -2,6 +2,7 @@ package ru.teamfive.catsgallery.ui.fragments
 
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.teamfive.catsgallery.R
@@ -21,14 +22,12 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
         _binding = FragmentFavoritesBinding.bind(view)
 
         val api = CatsApi(requireContext())
-        val favoritesRepository = api.getFavoritesRepository() // репозиторий с избранным
+        val favoritesRepository = api.getFavoritesRepository()
         lifecycleScope.launch {
             val faves = favoritesRepository.getAllFavorites()
 
-
-
+            adapter = ImageFavAdapter(faves,requireActivity() as AppCompatActivity)
             binding.recyclerViewImageFav.adapter = adapter
         }
-
     }
 }
