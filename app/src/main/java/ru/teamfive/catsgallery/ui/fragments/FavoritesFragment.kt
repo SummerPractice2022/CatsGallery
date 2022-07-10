@@ -8,11 +8,11 @@ import com.teamfive.catsgallery.databinding.FragmentFavoritesBinding
 import ru.teamfive.catsgallery.ui.fragments.recycler.imagefav.ImageFavAdapter
 import ru.teamfive.catsgallery.ui.fragments.recycler.imagefav.ImageFavRepository
 
-class FavoritesFragment: Fragment(R.layout.fragment_favorites) {
+class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
     private var _binding: FragmentFavoritesBinding? = null
     private val binding get() = _binding!!
 
-    private var adapter: ImageFavAdapter? = null
+    private lateinit var adapter: ImageFavAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

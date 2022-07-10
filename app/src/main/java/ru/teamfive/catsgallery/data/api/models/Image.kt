@@ -5,7 +5,7 @@ package ru.teamfive.catsgallery.data.api.models
  * @param id Id картинки
  * @param url Ссылка на картинку
  */
-class Image (
+class Image(
     var id: String,
     var url: String
 )

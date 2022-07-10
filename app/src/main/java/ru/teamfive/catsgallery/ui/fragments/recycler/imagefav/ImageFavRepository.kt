@@ -6,6 +6,5 @@ object ImageFavRepository {
         ImageFav("2"),
         ImageFav("3"),
         ImageFav("4"),
-
     )
 }

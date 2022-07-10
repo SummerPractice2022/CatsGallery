@@ -1,23 +1,29 @@
 package ru.teamfive.catsgallery.ui.fragments
 
 import android.os.Bundle
-import android.view.View
-import androidx.fragment.app.Fragment
+import android.widget.Toast
+import androidx.preference.EditTextPreference
+import androidx.preference.ListPreference
+import androidx.preference.PreferenceFragmentCompat
 import com.teamfive.catsgallery.R
-import com.teamfive.catsgallery.databinding.FragmentSetupBinding
+import ru.teamfive.catsgallery.ui.activities.MainActivity
 
-class SetupFragment: Fragment(R.layout.fragment_setup) {
-    private var _binding: FragmentSetupBinding? = null
-    private val binding get() = _binding!!
+class SetupFragment : PreferenceFragmentCompat() {
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        _binding = FragmentSetupBinding.bind(view)
+    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+        setPreferencesFromResource(R.xml.settings, rootKey)
 
-    }
+        findPreference<ListPreference>("theme")?.setOnPreferenceChangeListener { _, newValue ->
+            if (newValue is String) MainActivity.setTheme(newValue)
+            true
+        }
 
-    override fun onDestroyView() {
-        _binding = null
-        super.onDestroyView()
+        findPreference<EditTextPreference>("api-key")?.setOnPreferenceChangeListener { _, _ ->
+            val context = requireContext()
+            Toast.makeText(context, context.getString(R.string.restart_app), Toast.LENGTH_LONG)
+                .show()
+
+            return@setOnPreferenceChangeListener true
+        }
     }
 }

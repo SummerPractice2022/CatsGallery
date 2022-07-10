@@ -13,14 +13,21 @@
         android:id="@+id/imageFragment"
         android:name="ru.teamfive.catsgallery.ui.fragments.ImageFragment"
         android:label="fragment_image"
-        tools:layout="@layout/fragment_image" />
+        tools:layout="@layout/fragment_image" >
+        <action
+            android:id="@+id/action_imageFragment_self2"
+            app:destination="@id/imageFragment" />
+        <action
+            android:id="@+id/action_imageFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mainFragment"
         android:name="ru.teamfive.catsgallery.ui.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment2_to_imageFragment"
+            android:id="@+id/action_mainFragment_to_imageFragment"
             app:destination="@id/imageFragment" />
     </fragment>
     <fragment
