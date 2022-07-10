@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="vertical"
     tools:context="ru.teamfive.catsgallery.ui.fragments.ImageFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_add_to_favorites"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -37,7 +38,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_another_picture"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -50,7 +51,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_add_to_favorites" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_install_on_wallpaper"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -62,7 +63,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_another_picture" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_about_breed"
             android:layout_width="match_parent"
             android:layout_height="48dp"

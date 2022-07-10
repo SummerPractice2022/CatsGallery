@@ -57,7 +57,7 @@ class ImageFragment : Fragment(R.layout.fragment_image) {
             if (images == null || images?.size == 0)
                 return@setOnClickListener
 
-            if (index == images?.size)
+            if (index == images?.size!! - 1)
                 index = 0
             else
                 index++

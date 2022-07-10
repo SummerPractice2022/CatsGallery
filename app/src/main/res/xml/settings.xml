@@ -5,13 +5,14 @@
     <PreferenceCategory app:title="@string/general_settings">
 
         <EditTextPreference
+            android:defaultValue="7e07d997-e3c0-4de3-8520-08c1ec669d7f"
             android:icon="@drawable/ic_key"
             android:key="api-key"
             android:summary="@string/api_key_summary"
             android:title="@string/api_key" />
 
         <ListPreference
-            android:defaultValue="@string/system_default"
+            android:defaultValue="system"
             android:dialogTitle="@string/select_theme"
             android:entries="@array/themes"
             android:entryValues="@array/themes_values"
