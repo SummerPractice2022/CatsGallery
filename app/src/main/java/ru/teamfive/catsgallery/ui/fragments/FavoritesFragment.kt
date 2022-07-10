@@ -26,7 +26,7 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
         lifecycleScope.launch {
             val faves = favoritesRepository.getAllFavorites()
 
-            adapter = ImageFavAdapter(faves,requireActivity() as AppCompatActivity)
+            adapter = ImageFavAdapter(faves.toMutableList(), requireActivity() as AppCompatActivity)
             binding.recyclerViewImageFav.adapter = adapter
         }
     }

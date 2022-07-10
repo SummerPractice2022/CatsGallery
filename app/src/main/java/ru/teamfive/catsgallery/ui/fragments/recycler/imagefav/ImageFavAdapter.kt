@@ -12,13 +12,13 @@ import ru.teamfive.catsgallery.data.api.CatsApi
 import ru.teamfive.catsgallery.data.api.models.Favorite
 
 class ImageFavAdapter(
-    private val list: List<Favorite>,
+    private val list: MutableList<Favorite>,
     private val activity: AppCompatActivity,
-) : RecyclerView.Adapter<ImageFavHolders>() {
+) : RecyclerView.Adapter<ImageFavHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int,
-    ): ImageFavHolders = ImageFavHolders(
+    ): ImageFavHolder = ImageFavHolder(
         ItemFavoritesBinding.inflate(
             LayoutInflater.from(parent.context),
             parent,
@@ -26,7 +26,7 @@ class ImageFavAdapter(
         )
     )
 
-    override fun onBindViewHolder(holder: ImageFavHolders, position: Int) {
+    override fun onBindViewHolder(holder: ImageFavHolder, position: Int) {
         val api = CatsApi(activity.applicationContext)
         val imagesRepository = api.getImagesRepository()
         val favoritesRepository = api.getFavoritesRepository()
@@ -34,9 +34,10 @@ class ImageFavAdapter(
             val image = imagesRepository.getImageById(list[position].imageId)
             Glide.with(activity.applicationContext).load(image.url).into(holder.imageFavorite)
         }
-        holder.btnDeleteFavorite.setOnClickListener{
-            activity.lifecycleScope.launch{
+        holder.btnDeleteFavorite.setOnClickListener {
+            activity.lifecycleScope.launch {
                 val faves = favoritesRepository.deleteFavorite(list[position].id)
+                list.remove(list[position])
                 notifyItemRemoved(position)
             }
         }
