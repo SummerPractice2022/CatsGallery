@@ -8,7 +8,11 @@
         android:id="@+id/favoritesFragment"
         android:name="ru.teamfive.catsgallery.ui.fragments.FavoritesFragment"
         android:label="fragment_favorites"
-        tools:layout="@layout/fragment_favorites" />
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_self"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/imageFragment"
         android:name="ru.teamfive.catsgallery.ui.fragments.ImageFragment"

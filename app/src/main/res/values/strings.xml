@@ -6,7 +6,6 @@
     <string name="another_picture">Another picture</string>
     <string name="install_on_wallpaper">Install on wallpaper</string>
     <string name="about_the_breed">About the breed</string>
-    <string name="number_favorites_cat">NUMBER FAVORITES CAT</string>
     <string name="favorites">Favorites</string>
     <string name="select_breed">Select breed</string>
     <string name="set_wp_success">Set wallpaper successfully</string>
@@ -22,4 +21,6 @@
     <string name="dark">Dark</string>
     <string name="select_theme">Select theme</string>
     <string name="restart_app">Restart the app for the changes to take effect</string>
+    <string name="delete">Delete</string>
+    <string name="characteristic">characteristic:</string>
 </resources>
