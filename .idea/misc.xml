@@ -3,31 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/11/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/activity_main.xml" value="0.16" />
-        <entry key="..\:/Users/11/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/activity_spinner.xml" value="0.2" />
-        <entry key="..\:/Users/11/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/card_layput.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/11/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_favorites.xml" value="0.2" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/activity_spinner.xml" value="0.2" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/card_layput.xml" value="0.16799999999999998" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/fragment_breed.xml" value="0.20052083333333334" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/fragment_favorites.xml" value="0.176" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/fragment_firs.xml" value="0.11302083333333333" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/fragment_image.xml" value="0.11302083333333333" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/fragment_infobreed.xml" value="0.1" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/fragment_main.xml" value="0.152" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/fragment_second.xml" value="0.11302083333333333" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/fragment_setup.xml" value="0.25416666666666665" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/information_kotiki.xml" value="0.1" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/item_breed.xml" value="0.20052083333333334" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/item_main.xml" value="0.1" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/row.xml" value="0.2390625" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/row1.xml" value="0.23489583333333333" />
+        <entry key="..\:/CatsGallery/app/src/main/res/layout/tema_item.xml" value="0.2359375" />
         <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_favorites.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_image.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/agent/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_setup.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1375" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.124" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/drawable/ic_baseline_image_search_24.xml" value="0.124" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1375" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1375" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/activity_spinner.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/card_layput.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_favorites.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_firs.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_image.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/fragment_setup.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/item_favorites.xml" value="0.176" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/layout/item_main.xml" value="0.2" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/karp2/AndroidStudioProjects/CatsGallery/app/src/main/res/menu/botton_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
