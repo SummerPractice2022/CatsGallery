@@ -9,7 +9,7 @@ import com.teamfive.catsgallery.R
 import com.teamfive.catsgallery.databinding.FragmentFavoritesBinding
 import kotlinx.coroutines.launch
 import ru.teamfive.catsgallery.data.api.CatsApi
-import ru.teamfive.catsgallery.ui.fragments.recycler.imagefav.ImageFavAdapter
+import ru.teamfive.catsgallery.ui.recycler.imagefav.ImageFavAdapter
 
 class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
     private var _binding: FragmentFavoritesBinding? = null

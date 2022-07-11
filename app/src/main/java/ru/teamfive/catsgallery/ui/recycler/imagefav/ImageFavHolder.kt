@@ -1,4 +1,4 @@
-package ru.teamfive.catsgallery.ui.fragments.recycler.imagefav
+package ru.teamfive.catsgallery.ui.recycler.imagefav
 
 import androidx.recyclerview.widget.RecyclerView
 import com.teamfive.catsgallery.databinding.ItemFavoritesBinding

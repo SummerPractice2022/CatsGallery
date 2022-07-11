@@ -1,6 +1,7 @@
 package ru.teamfive.catsgallery.ui.fragments
 
 import android.app.WallpaperManager
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -11,6 +12,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DataSource
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.target.Target
 import com.teamfive.catsgallery.R
 import com.teamfive.catsgallery.databinding.FragmentImageBinding
 import kotlinx.coroutines.launch
@@ -26,6 +31,29 @@ class ImageFragment : Fragment(R.layout.fragment_image) {
     private lateinit var breedId: String
     private var images: List<Image>? = null
     private var index = 0
+
+    private val glideListener = object : RequestListener<Drawable> {
+        override fun onLoadFailed(
+            e: GlideException?,
+            model: Any?,
+            target: Target<Drawable>?,
+            isFirstResource: Boolean
+        ): Boolean {
+            Log.e("Error", "Image loading failed")
+            return false
+        }
+
+        override fun onResourceReady(
+            resource: Drawable?,
+            model: Any?,
+            target: Target<Drawable>?,
+            dataSource: DataSource?,
+            isFirstResource: Boolean
+        ): Boolean {
+            changeImageLoadingState()
+            return false
+        }
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -65,6 +93,7 @@ class ImageFragment : Fragment(R.layout.fragment_image) {
             else
                 index++
 
+            changeImageLoadingState()
             loadImage(images!![index].url)
         }
 
@@ -118,10 +147,22 @@ class ImageFragment : Fragment(R.layout.fragment_image) {
         }
     }
 
-    private fun loadImage(imageUrl: String) =
+    private fun loadImage(imageUrl: String) {
         Glide.with(requireContext())
             .load(imageUrl)
+            .listener(glideListener)
             .into(binding.imageView)
+    }
+
+    private fun changeImageLoadingState() {
+        if (binding.loaderImage.visibility == View.VISIBLE) {
+            binding.loaderImage.visibility = View.GONE
+            binding.imageView.visibility = View.VISIBLE
+        } else {
+            binding.imageView.visibility = View.GONE
+            binding.loaderImage.visibility = View.VISIBLE
+        }
+    }
 
     override fun onDestroyView() {
         _binding = null

@@ -1,4 +1,4 @@
-package ru.teamfive.catsgallery.ui.fragments.recycler.breed
+package ru.teamfive.catsgallery.ui.recycler.breed
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
