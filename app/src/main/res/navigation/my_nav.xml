@@ -15,11 +15,11 @@
         android:label="fragment_image"
         tools:layout="@layout/fragment_image" >
         <action
-            android:id="@+id/action_imageFragment_self2"
-            app:destination="@id/imageFragment" />
-        <action
             android:id="@+id/action_imageFragment_to_favoritesFragment"
             app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_imageFragment_to_breedFragment"
+            app:destination="@id/breedFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
@@ -35,4 +35,9 @@
         android:name="ru.teamfive.catsgallery.ui.fragments.SetupFragment"
         android:label="fragment_setup"
         tools:layout="@layout/fragment_setup" />
+    <fragment
+        android:id="@+id/breedFragment"
+        android:name="ru.teamfive.catsgallery.ui.fragments.BreedFragment"
+        android:label="fragment_breed"
+        tools:layout="@layout/fragment_breed" />
 </navigation>

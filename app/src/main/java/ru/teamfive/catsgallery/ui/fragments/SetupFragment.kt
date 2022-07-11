@@ -20,7 +20,7 @@ class SetupFragment : PreferenceFragmentCompat() {
 
         findPreference<EditTextPreference>("api-key")?.setOnPreferenceChangeListener { _, _ ->
             val context = requireContext()
-            Toast.makeText(context, context.getString(R.string.restart_app), Toast.LENGTH_LONG)
+            Toast.makeText(context, R.string.restart_app, Toast.LENGTH_LONG)
                 .show()
 
             return@setOnPreferenceChangeListener true

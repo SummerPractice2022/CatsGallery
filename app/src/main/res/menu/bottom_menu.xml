@@ -4,16 +4,16 @@
     <item
         android:id="@+id/setupFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="Setup"/>
+        android:icon="@drawable/ic_settings"
+        android:title="@string/setup"/>
     <item
         android:id="@+id/mainFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_image_search_24"
-        android:title="Search cat"/>
+        android:icon="@drawable/ic_image_search"
+        android:title="@string/pictures"/>
     <item
         android:id="@+id/favoritesFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_favorite_24"
-        android:title="Favorites Cat"/>
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/favorites"/>
 </menu>
