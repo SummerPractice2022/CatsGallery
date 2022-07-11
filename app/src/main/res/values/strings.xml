@@ -10,7 +10,7 @@
     <string name="set_wp_success">Set wallpaper successfully</string>
     <string name="add_favorites_success">Added to favorites successfully</string>
     <string name="remove_favorites_failed">Can\'t remove cat from favorites 😢</string>
-    <string name="setup">Setup</string>
+    <string name="setup">Settings</string>
     <string name="general_settings">General settings</string>
     <string name="api_key">API Key</string>
     <string name="api_key_summary">Change API Key</string>

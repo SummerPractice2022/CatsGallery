@@ -44,7 +44,7 @@
             android:layout_height="48dp"
             android:layout_marginTop="32dp"
             android:text="@string/add_to_favorites"
-            app:icon="@drawable/ic_baseline_favorite_24"
+            app:icon="@drawable/ic_favorite"
             app:iconGravity="textStart"
             app:layout_constraintBottom_toTopOf="@+id/btn_another_picture"
             app:layout_constraintEnd_toEndOf="parent"
